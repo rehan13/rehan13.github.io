@@ -1,6 +1,7 @@
 html{
     height:100%;
     width:100%;
+    margin:7.5px 7.5px 7.5px 7.5px;
     
 }
 body{
@@ -13,9 +14,7 @@ body, h1, h2, h3, p, ul, li, a {
     margin:1vw;
     padding:0;
     text-decoration: none;
-    color: white;
-    
-    
+    color: white;    
 }
 
 ul, li {
@@ -43,9 +42,8 @@ header {
 }
 
 .profile-picture {
-    border-radius: 50%;
     width: 350px; /* Adjust as needed */
-    margin-bottom: 10px;
+    border-radius: 50%;
 }
 
 /* Navigation menu styles */
@@ -148,10 +146,24 @@ footer p{
     list-style: none;
 } 
 
-  @media screen and (min-width: 772px){
+.nav-item a:hover{
+    transform: scale(2);
+    transition: 0.2s;
+    color:orange
+}
+
+@media screen and (min-width: 772px){
     .grid {
-        grid-template-columns: 1fr 1fr;
-      }
+         grid-template-columns: 1fr 1fr;
     }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: auto auto; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 5vw; 
+    }
+}
 
     
