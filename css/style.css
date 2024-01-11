@@ -1,0 +1,161 @@
+html{
+    height:100%;
+    width:100%;
+    
+}
+body{
+    background-image: url("../img/background.webp");
+}
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:1vw;
+    padding:0;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+ul, li {
+    list-style: square;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+/* Header and profile picture styles */
+header {
+    text-align: center;
+    font-family: 'Oswald', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 350px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+/* Navigation menu styles */
+nav ul{
+    background: #3b393b;
+    text-align: center;
+    margin:0vw;
+}
+
+nav ul li {
+    display: inline; 
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: inline-block; 
+    justify-content: space-between;
+}
+
+/* Main introduction area */
+.intro {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px; /* Large padding for big text */
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 3em; /* Large text for the main heading */
+    margin-bottom: 0.5em;
+}
+
+.intro p {
+    font-size: 1.5em; /* Slightly larger text for subheading */
+    margin-bottom: 1.5em;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e8491d; /* A reddish background color */
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #333; /* Dark background on hover */
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0vw;
+}
+
+footer p{
+    color: white;
+}
+
+.grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.grid img {
+    height: 40vw;
+    width: 40vw;
+    max-width: 300px;
+    max-height: 300px;
+    justify-content: space-between;
+}
+  
+.grid img:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.navbar {
+    justify-content: center;
+}
+
+.navbar-toggler {
+    background-color: #3b393b; /* Set your desired background color */
+    border-color: #ffffff; /* Optional: Adjust the border color to match the background */
+}
+.list{
+    background: #3b393b;
+}
+.nav-item {
+    list-style: none;
+}
+
+
+  
+  
+
+  @media screen and (min-width: 772px){
+    .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    
