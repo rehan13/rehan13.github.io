@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 html{
     height:100%;
     width:100%;    
@@ -57,7 +59,7 @@ main {
 
 
 body, h1, h2, h3, p, ul, li, a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins','Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:1vw;
     padding:0;
     text-decoration: none;
@@ -89,7 +91,7 @@ h3{
 
 header {
     text-align: center;
-    font-family: 'Oswald', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Rubic','Oswald', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 20px;
     padding: 20px 0;
 }
