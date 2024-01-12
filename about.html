@@ -9,6 +9,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
+        <script src="script.js"></script>
     </head>
 <body>
     <header>
@@ -57,6 +58,8 @@
             <p>I am a passionate Data Science and Computer Science professional with a robust academic foundation in Data Science, Mathematics, and Computer Science. My determination, rapid problem-solving abilities, and extensive experience in data analysis, machine learning, algorithms, and data structures make me a strong candidate for challenging roles in these fields.</p>
         </section>
 
+        <hr>
+
         <section id="experience">
             <h2>Professional Experience</h2>
             <h3>Data Science Intern at The Coca-Cola Company</h3>
@@ -68,12 +71,19 @@
                 <li>Applying statistical methods to conduct hypothesis tests, evaluating the significance of factors impacting sales performance and deepening statistical analysis skills.</li>
             </ul>
         </section>
-
+        <hr>
         <section id="education">
             <h2>Education</h2>
+            <h3>University of British Columbia, Vancouver, Canada</h3>
             <ul>
-            <li>Bachelor of Science in Mathematics and Data Science, University of British Columbia, Canada (Sep 2019 - Dec 2023).</li>
-            <li>High School at American International School, Dhaka, Bangladesh - International Baccalaureate (IB) (Jul 2017 - May 2019).</li>
+            <li>Bachelor of Science in Mathematics and Data Science</li>
+            <li>Graduation: Dec 2023 </li>
+            </ul>
+
+            <h3>American International School, Dhaka, Bangladesh</h3>
+            <ul>
+                <li>High School-International Baccalaureate (IB)</li>
+                <li>Graduation: May 2019 </li>
             </ul>
         </section>
     </main>
@@ -81,5 +91,13 @@
     <footer>
         <p>&copy; 2024 Rehan Mondal. All rights reserved.</p>
     </footer>
+
+    <div id="loadingOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1000;">
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

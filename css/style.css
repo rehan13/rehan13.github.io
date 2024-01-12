@@ -4,6 +4,35 @@ html{
     margin:7.5px 7.5px 7.5px 7.5px;
     
 }
+
+#landingContent {
+    background-image: url('../img/your-image.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+    z-index: 10; 
+    flex-direction: column;
+    height: 100vh; 
+    text-align: center;
+}
+
+.special{
+    color: orange;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
 body{
     background-image: url("../img/background.webp");
 }
@@ -19,7 +48,7 @@ body{
     transition: color 0.2s;
 }
 
-/* Reset some basic elements */
+
 body, h1, h2, h3, p, ul, li, a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:1vw;
@@ -32,7 +61,7 @@ ul, li {
     list-style: square;
 }
 
-/* Basic body styling */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -40,11 +69,14 @@ body {
     padding: 0;
 }
 
-h1, h2{
+h1, h2, h3{
     text-align: center;
 }
+h3{
+    color: orange
+}
 
-/* Header and profile picture styles */
+
 header {
     text-align: center;
     font-family: 'Oswald', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
@@ -53,12 +85,17 @@ header {
 }
 
 .profile-picture {
-    width: 350px; /* Adjust as needed */
+    width: 350px; 
     border-radius: 50%;
     border:5px solid white; 
 }
 
-/* Navigation menu styles */
+.profile{
+    width: 350px; 
+    border-radius: 50%;
+    border:5px solid white; 
+}
+
 nav ul{
     background: #3b393b;
     text-align: center;
@@ -77,39 +114,39 @@ nav ul li a {
     justify-content: space-between;
 }
 
-/* Main introduction area */
+
 .intro {
     background: url('header-image.jpg') no-repeat center center/cover;
     color: white;
-    padding: 100px 20px; /* Large padding for big text */
+    padding: 100px 20px;
     text-align: center;
 }
 
 .intro h2 {
-    font-size: 3em; /* Large text for the main heading */
+    font-size: 3em; 
     margin-bottom: 0.5em;
 }
 
 .intro p {
-    font-size: 1.5em; /* Slightly larger text for subheading */
+    font-size: 1.5em; 
     margin-bottom: 1.5em;
 }
 
-/* Button styling */
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #e8491d; /* A reddish background color */
+    background: #e8491d; 
     color: white;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
     transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background: #333; /* Dark background on hover */
+    background: #333;
 }
 
-/* Footer styles */
+
 footer {
     background: #333;
     color: white;
@@ -152,8 +189,8 @@ footer p{
 }
 
 .navbar-toggler {
-    background-color: #3b393b; /* Set your desired background color */
-    border-color: #ffffff; /* Optional: Adjust the border color to match the background */
+    background-color: #3b393b; 
+    border-color: #ffffff; 
 }
 .list{
     background: #3b393b;
@@ -242,4 +279,32 @@ footer p{
     }
 }
 
-    
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.25em;
+}    
+
+.enlargedImage {
+    position: fixed;
+    z-index: 100; 
+    width: 60%; 
+    max-width: 600px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    cursor: pointer;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    z-index: 50;
+}
