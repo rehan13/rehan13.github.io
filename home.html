@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rehan Mondal - Software Engineer</title>
-        <!-- Add your stylesheet link here -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="script.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rehan Mondal - Software Engineer</title>
+    <!-- Add your stylesheet link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
 <body>
-
     <header>
         <div class="header-content">
             <img src="img/pro.png" alt="Rehan Mondal" class="profile-picture">
@@ -51,26 +50,16 @@
         </div>
     </div>
 </div>
-  
-    <main id="main">
-  
-      <div class="center">
-        <H2>Relevant Links:</H2>
-      </div>
-  
-      <p style=text-align:center>Click on the links below to contact me!</p>
-  
-      <div class="grid">
-        <a href="mailto::mondalrehan1312@gmail.com"><img src="img/Gmail.png" alt="Gmail"></a>
-        <a href="https://www.linkedin.com/in/rehanmondal/"><img src="img/linkedIn.png" alt="LinkedIn"></a>
-        <a href="https://github.com/rehan13"><img src="img/Github.png" alt="Github"></a>
-        <a href="https://www.ubc.ca"><img src="img/UBC.png" alt="UBC"></a>
-      </div>
-  
+    
+    <main>
+        <section class="intro">
+            <h2>I am a Software Developer / Data Scientist</h2>
+            <a href="Rehan_Resume_2024.pdf" class="btn" download="RehanMondalResume.pdf">Download My Resume!</a>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Rehan Mondal. All rights reserved.</p>
+        <p>&copy; 2024 All rights reserved </p>
     </footer>
 
     <div id="loadingOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1000;">
@@ -81,5 +70,20 @@
         </div>
     </div>
 
-  </body>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e){
+                    e.preventDefault();
+                    let target = this.getAttribute('href');
+                    document.getElementById('loadingOverlay').style.display = 'block';
+                    setTimeout(function(){
+                        window.location.href = target;
+                    }, 5000); // 5 second delay
+                });
+            });
+        });
+    </script> -->
+</body>
 </html>
