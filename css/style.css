@@ -320,3 +320,78 @@ footer p{
     background: rgba(136, 136, 136, 0.9); 
     z-index: 50;
 }
+
+.floating-icons {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.icon-link {
+    display: block;
+    margin: 5px 0;
+    background-color: #0077b5; 
+    color: white;
+    border: solid 2px white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+    background-color: #ffffff; 
+    color:#0077b5;
+    transition: color 0.3s;
+}
+
+.icon-link:nth-child(3) {
+    background-color: #c71610; 
+}
+
+.icon-link:nth-child(3):hover {
+    transform: scale(1.2);
+    background-color: #ffffff;
+    color: #c71610;
+    transition: color 0.3s;
+}
+
+.icon-link:nth-child(2) {
+    background-color: #8e0670; /* GitHub color, can be adjusted */
+}
+
+.icon-link:nth-child(2):hover {
+    transform: scale(1.2);
+    background-color: #ffffff; /* Darker GitHub color for hover effect */
+    color: #8e0670;
+    transition: color 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .floating-icons {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .icon-link {
+        margin: 0 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
