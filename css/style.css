@@ -343,7 +343,7 @@ footer p{
 .icon-link {
     display: block;
     margin: 5px 0;
-    background-color: #0077b5; 
+    background-color: #e8491d; 
     color: white;
     border: solid 2px white;
     width: 50px;
@@ -358,29 +358,29 @@ footer p{
 .icon-link:hover {
     transform: scale(1.2);
     background-color: #ffffff; 
-    color:#0077b5;
+    color:#e8491d;
     transition: color 0.3s;
 }
 
 .icon-link:nth-child(3) {
-    background-color: #c71610; 
+    background-color: #e8491d; 
 }
 
 .icon-link:nth-child(3):hover {
     transform: scale(1.2);
     background-color: #ffffff;
-    color: #c71610;
+    color: #e8491d;
     transition: color 0.3s;
 }
 
 .icon-link:nth-child(2) {
-    background-color: #8e0670; /* GitHub color, can be adjusted */
+    background-color: #e8491d; /* GitHub color, can be adjusted */
 }
 
 .icon-link:nth-child(2):hover {
     transform: scale(1.2);
     background-color: #ffffff; /* Darker GitHub color for hover effect */
-    color: #8e0670;
+    color: #e8491d;
     transition: color 0.3s;
 }
 
