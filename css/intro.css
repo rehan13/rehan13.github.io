@@ -9,7 +9,6 @@ html, body {
 
 #landingContent {
     background-image: url('../img/rehan-3.jpeg');
-    background-color: blur;
     background-size: cover; 
     background-position: left center;
     position: fixed;
@@ -21,7 +20,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: background-position 1s ease-in-out;
+    transition: background-position 1s ease-in-out, transform 1s ease-in-out;
     z-index: 10; 
     flex-direction: column;
     height: 100vh; 
@@ -30,15 +29,15 @@ html, body {
 
 #Title-Front {
     font-size: 10vw;
-    font-family: 'Luckiest Guy';
+    font-family: 'Luckiest Guy', cursive;
     font-weight: 700;
-    background-color: whitesmoke;
+    background-image: url('../img/Font.jpg');
     background-size: cover;
     background-clip: text;
     color: transparent;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 772px) {
     #landingContent {
         justify-content: center;
         align-items: center;
@@ -51,4 +50,8 @@ html, body {
         color: white; 
         text-align: center; 
     }
+}
+
+body.overflow-hidden {
+    overflow: hidden;
 }
