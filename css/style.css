@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest Guy');
 
 html{
     height:100%;
@@ -11,7 +12,8 @@ html, body {
 }
 
 #landingContent {
-    background-image: url('../img/pro-back.png'); 
+    background-image: url('../img/rehan-3.jpeg');
+    background-color: blur;
     background-size: cover; 
     background-position: center;
     position: fixed;
@@ -30,6 +32,21 @@ html, body {
     text-align: center;
 
 }
+
+#Title-Front{
+    font-size: 10vw;
+    font-family: 'Luckiest Guy';
+    font-weight: 700;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+
+
+
+}
+
+
 .special{
     color: rgb(30, 87, 141);
 }
@@ -60,7 +77,7 @@ main {
 
 
 body, h1, h2, h3, p, ul, li, a {
-    font-family: 'Poppins','Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Poppins','Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     margin:1vw;
     padding:0;
     text-decoration: none;

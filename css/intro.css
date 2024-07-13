@@ -1,13 +1,54 @@
-body, html {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest Guy');
+
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    overflow-x: hidden;
+}
+
+#landingContent {
+    background-image: url('../img/rehan-3.jpeg');
+    background-color: blur;
+    background-size: cover; 
+    background-position: left center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-position 1s ease-in-out;
+    z-index: 10; 
+    flex-direction: column;
+    height: 100vh; 
     text-align: center;
 }
 
-.welcome-page {
-    /* Add styling for your welcome page */
+#Title-Front {
+    font-size: 10vw;
+    font-family: 'Luckiest Guy';
+    font-weight: 700;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
 }
 
-.index-page {
-    /* Add styling for your index page */
+@media (max-width: 600px) {
+    #landingContent {
+        justify-content: center;
+        align-items: center;
+        background-position: calc(50% + 125vw) center;
+    }
+
+    #Title-Front {
+        position: relative;
+        font-size: 8vw;
+        color: white; 
+        text-align: center; 
+    }
 }
