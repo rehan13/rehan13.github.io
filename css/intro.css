@@ -10,7 +10,7 @@ html, body {
 #landingContent {
     background-image: url('../img/rehan-3.jpeg');
     background-size: cover; 
-    background-position: left center;
+    background-position: fixed;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,20 +37,6 @@ html, body {
     color: transparent;
 }
 
-@media (max-width: 772px) {
-    #landingContent {
-        justify-content: center;
-        align-items: center;
-        background-position: calc(50% + 125vw) center;
-    }
-
-    #Title-Front {
-        position: relative;
-        font-size: 8vw;
-        color: white; 
-        text-align: center; 
-    }
-}
 
 body.overflow-hidden {
     overflow: hidden;
