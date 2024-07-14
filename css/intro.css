@@ -48,6 +48,7 @@ html, body {
     #landingContent {
         justify-content: center;
         align-items: center;
+        background-position: 6% center;
     }
 
     #Title-Front {
