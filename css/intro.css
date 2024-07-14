@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Luckiest Guy');
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0; /* Ensure no padding */
     overflow-x: hidden;
 }
 
@@ -12,6 +17,8 @@ html, body {
     background-size: cover; 
     background-position: fixed;
     position: fixed;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
     top: 0;
     left: 0;
     width: 100%;
@@ -37,6 +44,19 @@ html, body {
     color: transparent;
 }
 
+@media (max-width: 932px) {
+    #landingContent {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Title-Front {
+        position: relative;
+        font-size: 8vw;
+        color: white; 
+        text-align: center; 
+    }
+}
 
 body.overflow-hidden {
     overflow: hidden;
